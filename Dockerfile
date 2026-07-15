@@ -23,7 +23,6 @@ COPY customers.csv .
 COPY products.csv .
 COPY orders.csv .
 COPY order_items.csv .
-COPY .env .
 
 # Create database
 RUN python load_data.py
