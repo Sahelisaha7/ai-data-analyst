@@ -1,0 +1,141 @@
+===============================================================
+  AI DATA ANALYST - QUICK START GUIDE
+===============================================================
+
+INDUSTRY-LEVEL PROJECT WITH 10K+ RECORDS
+
+===============================================================
+STEP-BY-STEP SETUP (Takes 5 minutes)
+===============================================================
+
+1. INSTALL PACKAGES
+   Terminal Command:
+   pip install openai python-dotenv sqlalchemy
+
+2. GET OPENAI API KEY
+   - Go to: https://platform.openai.com/account/api-keys
+   - Click "Create new secret key"
+   - Copy the key
+
+3. UPDATE .env FILE
+   - Open .env in your editor
+   - Find: OPENAI_API_KEY=your-api-key-here
+   - Replace with: OPENAI_API_KEY=sk-proj-xxxxx
+   - Save the file
+
+4. GENERATE SAMPLE DATA
+   Terminal Command:
+   python generate_data.py
+
+   This creates:
+   - customers.csv (1,000 rows)
+   - products.csv (500 rows)
+   - orders.csv (5,000 rows)
+   - order_items.csv (~10,000 rows)
+
+5. LOAD DATA INTO DATABASE
+   Terminal Command:
+   python load_data.py
+
+   This creates amazon.db with 4 related tables
+
+6. RUN THE APPLICATION
+   Terminal Command:
+   python main.py
+
+   Then ask questions like:
+   "Show me all customers from Mumbai"
+   "What is the total revenue?"
+   "List top products"
+
+===============================================================
+DATABASE TABLES (Total: 10,000+ rows)
+===============================================================
+
+CUSTOMERS (1,000 rows)
+  - customer_id, first_name, last_name, email, city, phone, join_date
+
+PRODUCTS (500 rows)
+  - product_id, product_name, category, price, stock, description
+
+ORDERS (5,000 rows)
+  - order_id, customer_id, order_date, total_amount, status
+
+ORDER_ITEMS (10,000 rows)
+  - item_id, order_id, product_id, quantity, unit_price, total_price
+
+===============================================================
+EXAMPLE QUERIES
+===============================================================
+
+"Show me all customers from Mumbai"
+"What are the total sales by city?"
+"List top 10 best-selling products"
+"Show orders from the last 30 days"
+"Which customers spent the most?"
+"How many products are in the Electronics category?"
+"Average order value by product category"
+"Show all pending orders"
+
+===============================================================
+FILES CREATED
+===============================================================
+
+PYTHON SCRIPTS:
+- main.py              Main application
+- generate_data.py     Create 10k rows of sample data
+- load_data.py         Load CSV files into database
+- setup.py             Automated setup script
+
+DATA FILES:
+- customers.csv        1,000 customer records
+- products.csv         500 product records
+- orders.csv           5,000 order records
+- order_items.csv      ~10,000 order items
+- amazon.db            SQLite database (created automatically)
+
+CONFIGURATION:
+- .env                 API keys (update with your key)
+- requirements.txt     Python dependencies
+- SETUP_COMPLETE.md    Full documentation
+- QUICK_START.txt      This file
+
+===============================================================
+TROUBLESHOOTING
+===============================================================
+
+ERROR: "Module not found: openai"
+FIX: pip install openai python-dotenv sqlalchemy
+
+ERROR: "OPENAI_API_KEY not found"
+FIX:
+  1. Check .env file exists in project root
+  2. Verify: OPENAI_API_KEY=sk-proj-xxxxx (not placeholder)
+  3. Save file and restart terminal
+
+ERROR: "Database file not found"
+FIX: Run these in order:
+  python generate_data.py
+  python load_data.py
+
+ERROR: "Incorrect API key"
+FIX: Get new key from https://platform.openai.com/account/api-keys
+
+===============================================================
+NEED HELP?
+===============================================================
+
+Read: SETUP_COMPLETE.md (full documentation)
+Check: .env file configuration
+Verify: All CSV files created by generate_data.py
+Test: python -c "import openai; print('OK')"
+
+===============================================================
+YOU'RE READY! 🚀
+===============================================================
+
+Run: python main.py
+
+Then ask any business question about the data!
+
+===============================================================

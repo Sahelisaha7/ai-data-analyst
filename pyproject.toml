@@ -1,0 +1,12 @@
+[project]
+name = "ai-data-analyst"
+version = "0.1.0"
+description = "AI-powered data analyst that converts natural language to SQL queries"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "sqlalchemy>=2.0",
+    "streamlit>=1.28",
+    "pandas>=2.0",
+    "ollama>=0.1"
+]

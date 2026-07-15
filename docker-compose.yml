@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  ai-analyst:
+    build: .
+    container_name: ai-data-analyst
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./amazon.db:/app/amazon.db
+    restart: unless-stopped

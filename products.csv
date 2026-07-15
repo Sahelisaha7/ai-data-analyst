@@ -1,0 +1,501 @@
+product_id,product_name,category,price,stock,description
+1,Screen Protector 1,Computers,12253.54,97,Quality product 1
+2,Screen Protector 2,Electronics,11840.99,225,Quality product 2
+3,USB Cable 3,Networking,14571.34,596,Quality product 3
+4,Phone Case 4,Electronics,1534.61,188,Quality product 4
+5,Tablet 5,Storage,3915.14,681,Quality product 5
+6,Headphones 6,Networking,4815.92,353,Quality product 6
+7,Charger 7,Electronics,35206.68,227,Quality product 7
+8,Camera 8,Storage,16462.31,550,Quality product 8
+9,Monitor 9,Electronics,15787.25,781,Quality product 9
+10,Screen Protector 10,Networking,41434.49,202,Quality product 10
+11,Tablet 11,Storage,45620.5,944,Quality product 11
+12,Microphone 12,Computers,1506.15,675,Quality product 12
+13,Tablet 13,Networking,29692.27,192,Quality product 13
+14,Smartphone 14,Networking,40612.11,204,Quality product 14
+15,Headphones 15,Accessories,47921.96,628,Quality product 15
+16,Keyboard 16,Storage,28660.19,220,Quality product 16
+17,Router 17,Networking,8838.48,136,Quality product 17
+18,Speaker 18,Storage,23823.21,408,Quality product 18
+19,Keyboard 19,Storage,43436.43,848,Quality product 19
+20,Smartphone 20,Electronics,23459.95,587,Quality product 20
+21,USB Cable 21,Computers,19027.94,474,Quality product 21
+22,Monitor 22,Electronics,26147.01,446,Quality product 22
+23,Headphones 23,Electronics,37440.53,75,Quality product 23
+24,Headphones 24,Electronics,30208.05,642,Quality product 24
+25,Webcam 25,Networking,12932.24,313,Quality product 25
+26,Speaker 26,Networking,47356.67,723,Quality product 26
+27,Keyboard 27,Electronics,29400.07,846,Quality product 27
+28,Tablet 28,Computers,29147.59,959,Quality product 28
+29,Charger 29,Accessories,46514.22,275,Quality product 29
+30,Speaker 30,Networking,23273.46,971,Quality product 30
+31,Webcam 31,Accessories,30841.05,146,Quality product 31
+32,Power Bank 32,Computers,2567.09,86,Quality product 32
+33,Smartphone 33,Electronics,26636.44,236,Quality product 33
+34,Speaker 34,Accessories,30209.31,380,Quality product 34
+35,Screen Protector 35,Accessories,14913.96,809,Quality product 35
+36,Keyboard 36,Accessories,28196.41,689,Quality product 36
+37,Headphones 37,Computers,14028.83,279,Quality product 37
+38,Camera 38,Networking,34771.73,983,Quality product 38
+39,Power Bank 39,Networking,7800.53,233,Quality product 39
+40,Headphones 40,Accessories,44156.65,119,Quality product 40
+41,Charger 41,Accessories,30642.5,590,Quality product 41
+42,Tablet 42,Networking,38628.88,576,Quality product 42
+43,Power Bank 43,Electronics,3284.74,672,Quality product 43
+44,Headphones 44,Accessories,6873.35,444,Quality product 44
+45,Webcam 45,Computers,38750.38,3,Quality product 45
+46,Speaker 46,Networking,16869.67,595,Quality product 46
+47,USB Cable 47,Networking,17817.65,399,Quality product 47
+48,Keyboard 48,Computers,17157.35,614,Quality product 48
+49,Power Bank 49,Networking,15505.65,419,Quality product 49
+50,Speaker 50,Accessories,43843.41,290,Quality product 50
+51,Webcam 51,Storage,9487.0,736,Quality product 51
+52,Microphone 52,Electronics,8282.75,795,Quality product 52
+53,Router 53,Electronics,3648.83,375,Quality product 53
+54,External HDD 54,Storage,14570.37,531,Quality product 54
+55,Microphone 55,Computers,19829.38,947,Quality product 55
+56,External HDD 56,Computers,1859.51,747,Quality product 56
+57,Mouse 57,Electronics,38909.01,455,Quality product 57
+58,Smart Watch 58,Accessories,17120.06,609,Quality product 58
+59,Router 59,Computers,40104.85,193,Quality product 59
+60,Mouse 60,Accessories,21509.67,520,Quality product 60
+61,Speaker 61,Storage,27786.24,222,Quality product 61
+62,Mouse 62,Electronics,18464.39,724,Quality product 62
+63,Microphone 63,Electronics,9086.39,621,Quality product 63
+64,Headphones 64,Networking,46417.15,432,Quality product 64
+65,Smartphone 65,Accessories,32087.25,625,Quality product 65
+66,Tablet 66,Computers,21195.95,195,Quality product 66
+67,Speaker 67,Networking,10248.6,499,Quality product 67
+68,Monitor 68,Electronics,47936.29,446,Quality product 68
+69,Smart Watch 69,Electronics,28611.67,418,Quality product 69
+70,Webcam 70,Networking,14903.49,281,Quality product 70
+71,RAM 71,Networking,35043.8,240,Quality product 71
+72,USB Cable 72,Electronics,3238.42,587,Quality product 72
+73,Webcam 73,Networking,47167.89,667,Quality product 73
+74,Microphone 74,Networking,15164.94,699,Quality product 74
+75,Power Bank 75,Computers,2747.86,441,Quality product 75
+76,Power Bank 76,Networking,18689.5,825,Quality product 76
+77,Phone Case 77,Storage,42430.46,645,Quality product 77
+78,RAM 78,Storage,6470.99,519,Quality product 78
+79,Phone Case 79,Networking,16853.53,690,Quality product 79
+80,Screen Protector 80,Storage,28589.14,654,Quality product 80
+81,USB Cable 81,Networking,48747.82,290,Quality product 81
+82,Smartphone 82,Accessories,43757.69,797,Quality product 82
+83,Webcam 83,Accessories,12288.49,112,Quality product 83
+84,RAM 84,Electronics,1959.75,146,Quality product 84
+85,Mouse 85,Computers,42839.07,608,Quality product 85
+86,Headphones 86,Computers,48034.05,551,Quality product 86
+87,Smart Watch 87,Computers,40200.16,373,Quality product 87
+88,External HDD 88,Electronics,23651.57,783,Quality product 88
+89,Router 89,Networking,2232.09,446,Quality product 89
+90,Charger 90,Networking,10129.25,302,Quality product 90
+91,Power Bank 91,Electronics,40074.72,426,Quality product 91
+92,Mouse 92,Computers,18216.2,526,Quality product 92
+93,Power Bank 93,Electronics,46746.88,244,Quality product 93
+94,Camera 94,Electronics,28395.05,440,Quality product 94
+95,Webcam 95,Accessories,45327.61,408,Quality product 95
+96,Keyboard 96,Networking,15415.92,786,Quality product 96
+97,Keyboard 97,Electronics,48120.29,458,Quality product 97
+98,Mouse 98,Computers,39286.52,973,Quality product 98
+99,Screen Protector 99,Computers,42555.11,203,Quality product 99
+100,RAM 100,Storage,30487.28,860,Quality product 100
+101,Monitor 101,Accessories,45732.69,832,Quality product 101
+102,Laptop 102,Electronics,11756.4,385,Quality product 102
+103,Tablet 103,Accessories,36510.24,967,Quality product 103
+104,Microphone 104,Accessories,33922.66,49,Quality product 104
+105,Phone Case 105,Storage,24068.17,55,Quality product 105
+106,Phone Case 106,Computers,12182.82,748,Quality product 106
+107,Screen Protector 107,Storage,43067.81,532,Quality product 107
+108,Smart Watch 108,Storage,18515.77,569,Quality product 108
+109,Headphones 109,Electronics,7366.91,306,Quality product 109
+110,Power Bank 110,Electronics,19526.04,111,Quality product 110
+111,Tablet 111,Networking,18069.15,433,Quality product 111
+112,Laptop 112,Electronics,11404.16,551,Quality product 112
+113,Microphone 113,Computers,39899.28,273,Quality product 113
+114,Camera 114,Computers,11960.02,35,Quality product 114
+115,Power Bank 115,Accessories,17015.01,4,Quality product 115
+116,Screen Protector 116,Storage,37747.12,969,Quality product 116
+117,Microphone 117,Networking,10507.78,250,Quality product 117
+118,External HDD 118,Electronics,44041.48,663,Quality product 118
+119,Smart Watch 119,Electronics,11716.76,697,Quality product 119
+120,Laptop 120,Accessories,22665.57,833,Quality product 120
+121,Tablet 121,Accessories,18810.54,709,Quality product 121
+122,RAM 122,Computers,30980.61,523,Quality product 122
+123,Smartphone 123,Networking,44522.33,324,Quality product 123
+124,Microphone 124,Accessories,32634.5,425,Quality product 124
+125,Phone Case 125,Accessories,43414.31,73,Quality product 125
+126,Speaker 126,Computers,3018.44,153,Quality product 126
+127,Tablet 127,Electronics,4078.99,676,Quality product 127
+128,Screen Protector 128,Electronics,8375.23,16,Quality product 128
+129,Keyboard 129,Computers,17238.09,674,Quality product 129
+130,Tablet 130,Networking,8992.92,24,Quality product 130
+131,Monitor 131,Accessories,33588.05,952,Quality product 131
+132,USB Cable 132,Electronics,36253.58,357,Quality product 132
+133,Microphone 133,Networking,42908.07,494,Quality product 133
+134,Router 134,Storage,21760.79,320,Quality product 134
+135,Mouse 135,Storage,9051.63,487,Quality product 135
+136,Mouse 136,Storage,38547.32,833,Quality product 136
+137,Screen Protector 137,Electronics,11600.56,15,Quality product 137
+138,External HDD 138,Computers,16254.3,607,Quality product 138
+139,Camera 139,Computers,17119.02,190,Quality product 139
+140,Laptop 140,Accessories,10011.88,925,Quality product 140
+141,Power Bank 141,Electronics,46731.64,818,Quality product 141
+142,Monitor 142,Storage,47669.83,177,Quality product 142
+143,Speaker 143,Storage,4614.13,921,Quality product 143
+144,Router 144,Computers,7326.11,73,Quality product 144
+145,RAM 145,Storage,30050.86,111,Quality product 145
+146,Speaker 146,Computers,26578.56,395,Quality product 146
+147,External HDD 147,Electronics,37286.84,721,Quality product 147
+148,Laptop 148,Electronics,33920.36,983,Quality product 148
+149,Camera 149,Accessories,45372.21,458,Quality product 149
+150,Headphones 150,Electronics,30790.05,918,Quality product 150
+151,Webcam 151,Electronics,42971.39,808,Quality product 151
+152,Tablet 152,Networking,1385.72,796,Quality product 152
+153,Router 153,Storage,41779.97,911,Quality product 153
+154,External HDD 154,Electronics,6897.4,811,Quality product 154
+155,Screen Protector 155,Storage,49670.24,913,Quality product 155
+156,USB Cable 156,Accessories,38677.13,290,Quality product 156
+157,Tablet 157,Storage,18843.78,588,Quality product 157
+158,Microphone 158,Computers,15817.87,470,Quality product 158
+159,Headphones 159,Storage,40885.21,572,Quality product 159
+160,Webcam 160,Networking,10813.26,268,Quality product 160
+161,Laptop 161,Networking,3360.63,209,Quality product 161
+162,RAM 162,Electronics,39157.01,210,Quality product 162
+163,Headphones 163,Electronics,29977.13,219,Quality product 163
+164,Power Bank 164,Computers,31138.41,424,Quality product 164
+165,Power Bank 165,Storage,11449.85,333,Quality product 165
+166,Mouse 166,Networking,7159.61,896,Quality product 166
+167,Smart Watch 167,Electronics,37646.0,568,Quality product 167
+168,Smart Watch 168,Networking,5697.92,928,Quality product 168
+169,Charger 169,Accessories,9196.66,304,Quality product 169
+170,External HDD 170,Networking,40891.28,198,Quality product 170
+171,Screen Protector 171,Computers,3765.33,742,Quality product 171
+172,Laptop 172,Networking,43551.81,529,Quality product 172
+173,Screen Protector 173,Electronics,27531.34,397,Quality product 173
+174,Tablet 174,Storage,13268.63,389,Quality product 174
+175,Microphone 175,Electronics,16662.7,426,Quality product 175
+176,Mouse 176,Accessories,31347.16,647,Quality product 176
+177,Phone Case 177,Networking,6615.05,872,Quality product 177
+178,Laptop 178,Computers,755.36,336,Quality product 178
+179,Screen Protector 179,Electronics,40185.78,585,Quality product 179
+180,Monitor 180,Computers,16574.58,55,Quality product 180
+181,Headphones 181,Electronics,44015.81,138,Quality product 181
+182,Smartphone 182,Networking,12382.58,169,Quality product 182
+183,External HDD 183,Networking,4559.74,7,Quality product 183
+184,Microphone 184,Accessories,45645.76,948,Quality product 184
+185,Smart Watch 185,Computers,38883.55,442,Quality product 185
+186,RAM 186,Accessories,19894.88,15,Quality product 186
+187,RAM 187,Computers,1015.17,857,Quality product 187
+188,RAM 188,Electronics,31447.95,170,Quality product 188
+189,Laptop 189,Electronics,38036.91,433,Quality product 189
+190,Webcam 190,Storage,27728.23,414,Quality product 190
+191,RAM 191,Electronics,16742.49,956,Quality product 191
+192,Webcam 192,Networking,22695.09,688,Quality product 192
+193,Laptop 193,Computers,19075.56,323,Quality product 193
+194,Tablet 194,Storage,9317.52,332,Quality product 194
+195,Microphone 195,Storage,39452.55,136,Quality product 195
+196,Speaker 196,Computers,1292.16,450,Quality product 196
+197,Microphone 197,Networking,20240.5,655,Quality product 197
+198,Tablet 198,Storage,48213.73,434,Quality product 198
+199,Microphone 199,Networking,13700.01,937,Quality product 199
+200,External HDD 200,Storage,28470.26,937,Quality product 200
+201,Charger 201,Storage,10096.73,421,Quality product 201
+202,External HDD 202,Computers,48388.72,142,Quality product 202
+203,Camera 203,Electronics,42757.74,431,Quality product 203
+204,Screen Protector 204,Accessories,24560.24,837,Quality product 204
+205,Speaker 205,Accessories,13426.94,380,Quality product 205
+206,Smart Watch 206,Electronics,15909.1,174,Quality product 206
+207,Laptop 207,Electronics,8503.64,4,Quality product 207
+208,Headphones 208,Storage,18830.72,845,Quality product 208
+209,Router 209,Electronics,45298.56,200,Quality product 209
+210,Microphone 210,Storage,16536.69,984,Quality product 210
+211,Laptop 211,Networking,20755.34,650,Quality product 211
+212,Charger 212,Computers,15980.51,404,Quality product 212
+213,Router 213,Networking,15038.2,921,Quality product 213
+214,RAM 214,Networking,40577.59,456,Quality product 214
+215,Monitor 215,Networking,46636.22,911,Quality product 215
+216,Power Bank 216,Networking,25574.76,649,Quality product 216
+217,Speaker 217,Computers,22768.75,162,Quality product 217
+218,Monitor 218,Storage,20600.01,198,Quality product 218
+219,Router 219,Computers,15542.93,501,Quality product 219
+220,Speaker 220,Accessories,16588.76,226,Quality product 220
+221,USB Cable 221,Electronics,2933.64,722,Quality product 221
+222,Speaker 222,Networking,6863.65,985,Quality product 222
+223,Keyboard 223,Electronics,7118.59,198,Quality product 223
+224,Tablet 224,Computers,34945.42,334,Quality product 224
+225,Smart Watch 225,Accessories,25119.68,382,Quality product 225
+226,Speaker 226,Storage,42317.88,932,Quality product 226
+227,RAM 227,Accessories,31326.38,562,Quality product 227
+228,RAM 228,Networking,19682.29,355,Quality product 228
+229,Power Bank 229,Accessories,40669.65,94,Quality product 229
+230,USB Cable 230,Networking,20525.07,350,Quality product 230
+231,RAM 231,Computers,11374.16,601,Quality product 231
+232,External HDD 232,Accessories,49417.25,884,Quality product 232
+233,Monitor 233,Electronics,26008.25,240,Quality product 233
+234,Smart Watch 234,Accessories,34310.96,702,Quality product 234
+235,Speaker 235,Computers,20156.45,553,Quality product 235
+236,Mouse 236,Networking,7787.53,162,Quality product 236
+237,Keyboard 237,Computers,38314.72,875,Quality product 237
+238,Headphones 238,Storage,28007.75,16,Quality product 238
+239,RAM 239,Computers,45675.33,823,Quality product 239
+240,Microphone 240,Computers,21108.32,376,Quality product 240
+241,Router 241,Computers,23320.23,815,Quality product 241
+242,Router 242,Electronics,13300.06,317,Quality product 242
+243,Screen Protector 243,Electronics,14194.02,453,Quality product 243
+244,Keyboard 244,Accessories,27191.65,320,Quality product 244
+245,Power Bank 245,Computers,40237.35,88,Quality product 245
+246,RAM 246,Accessories,17035.01,296,Quality product 246
+247,Charger 247,Networking,47234.16,857,Quality product 247
+248,USB Cable 248,Storage,12235.7,438,Quality product 248
+249,Keyboard 249,Computers,15842.05,302,Quality product 249
+250,Camera 250,Accessories,37993.35,129,Quality product 250
+251,Tablet 251,Accessories,25308.21,206,Quality product 251
+252,Smart Watch 252,Electronics,7394.02,494,Quality product 252
+253,Microphone 253,Electronics,10052.77,451,Quality product 253
+254,External HDD 254,Accessories,37465.13,665,Quality product 254
+255,Keyboard 255,Storage,34554.7,794,Quality product 255
+256,Power Bank 256,Storage,38850.99,924,Quality product 256
+257,Smart Watch 257,Networking,38714.05,784,Quality product 257
+258,Charger 258,Networking,2258.19,13,Quality product 258
+259,Smartphone 259,Storage,17076.74,860,Quality product 259
+260,Headphones 260,Electronics,22832.78,3,Quality product 260
+261,Mouse 261,Networking,47331.34,324,Quality product 261
+262,Speaker 262,Accessories,49888.56,979,Quality product 262
+263,Keyboard 263,Electronics,30380.58,622,Quality product 263
+264,Router 264,Accessories,15836.99,103,Quality product 264
+265,Smart Watch 265,Accessories,10795.94,260,Quality product 265
+266,Camera 266,Electronics,16969.31,227,Quality product 266
+267,Screen Protector 267,Accessories,41690.61,853,Quality product 267
+268,Router 268,Electronics,18625.16,546,Quality product 268
+269,Keyboard 269,Networking,21056.72,246,Quality product 269
+270,Power Bank 270,Networking,3309.07,239,Quality product 270
+271,Keyboard 271,Networking,15384.09,516,Quality product 271
+272,Smart Watch 272,Networking,5565.18,230,Quality product 272
+273,Microphone 273,Storage,33324.03,954,Quality product 273
+274,Charger 274,Computers,29917.76,644,Quality product 274
+275,RAM 275,Networking,38286.66,388,Quality product 275
+276,RAM 276,Electronics,31733.23,119,Quality product 276
+277,Speaker 277,Computers,4937.96,691,Quality product 277
+278,Webcam 278,Accessories,48500.65,920,Quality product 278
+279,Webcam 279,Computers,39556.49,281,Quality product 279
+280,Smart Watch 280,Accessories,28010.5,478,Quality product 280
+281,Webcam 281,Accessories,45889.64,985,Quality product 281
+282,Screen Protector 282,Networking,29816.37,304,Quality product 282
+283,Headphones 283,Computers,6979.13,226,Quality product 283
+284,Monitor 284,Accessories,15566.19,690,Quality product 284
+285,Monitor 285,Electronics,26912.48,709,Quality product 285
+286,Keyboard 286,Accessories,33772.96,0,Quality product 286
+287,Smart Watch 287,Computers,26592.11,956,Quality product 287
+288,Power Bank 288,Computers,3650.22,631,Quality product 288
+289,Webcam 289,Electronics,2408.26,122,Quality product 289
+290,Smartphone 290,Storage,12754.6,364,Quality product 290
+291,Mouse 291,Networking,7750.92,220,Quality product 291
+292,Speaker 292,Networking,15404.56,850,Quality product 292
+293,External HDD 293,Storage,16187.17,21,Quality product 293
+294,Keyboard 294,Accessories,16008.38,901,Quality product 294
+295,RAM 295,Networking,14204.58,738,Quality product 295
+296,Phone Case 296,Computers,767.75,300,Quality product 296
+297,Camera 297,Networking,28314.31,31,Quality product 297
+298,Monitor 298,Networking,14530.13,153,Quality product 298
+299,Smart Watch 299,Computers,34731.6,713,Quality product 299
+300,Smartphone 300,Electronics,22087.21,357,Quality product 300
+301,Router 301,Accessories,36353.92,343,Quality product 301
+302,Speaker 302,Accessories,4296.59,149,Quality product 302
+303,Router 303,Computers,23901.66,371,Quality product 303
+304,Camera 304,Accessories,8835.81,990,Quality product 304
+305,Monitor 305,Networking,32996.87,911,Quality product 305
+306,Smartphone 306,Storage,13535.13,790,Quality product 306
+307,Router 307,Computers,35402.66,559,Quality product 307
+308,Router 308,Storage,24413.38,685,Quality product 308
+309,USB Cable 309,Computers,12780.96,57,Quality product 309
+310,RAM 310,Computers,8149.75,920,Quality product 310
+311,Headphones 311,Storage,21301.03,237,Quality product 311
+312,Phone Case 312,Electronics,47519.06,819,Quality product 312
+313,Keyboard 313,Storage,776.44,645,Quality product 313
+314,Phone Case 314,Accessories,29129.2,615,Quality product 314
+315,Smart Watch 315,Accessories,46254.23,373,Quality product 315
+316,Keyboard 316,Storage,4933.97,314,Quality product 316
+317,RAM 317,Computers,5456.99,755,Quality product 317
+318,Camera 318,Computers,9284.3,890,Quality product 318
+319,Mouse 319,Accessories,3633.48,483,Quality product 319
+320,USB Cable 320,Accessories,30293.51,544,Quality product 320
+321,Headphones 321,Accessories,38813.43,566,Quality product 321
+322,Keyboard 322,Accessories,13241.41,391,Quality product 322
+323,External HDD 323,Storage,42012.83,247,Quality product 323
+324,RAM 324,Networking,22946.27,469,Quality product 324
+325,Screen Protector 325,Computers,4221.01,438,Quality product 325
+326,Camera 326,Storage,16025.15,487,Quality product 326
+327,Router 327,Accessories,49915.14,909,Quality product 327
+328,Speaker 328,Networking,39540.61,503,Quality product 328
+329,Webcam 329,Networking,9112.8,583,Quality product 329
+330,Charger 330,Networking,10460.88,720,Quality product 330
+331,Screen Protector 331,Storage,6599.52,518,Quality product 331
+332,USB Cable 332,Networking,21088.01,993,Quality product 332
+333,Keyboard 333,Electronics,41784.83,10,Quality product 333
+334,USB Cable 334,Computers,13070.81,755,Quality product 334
+335,Smart Watch 335,Electronics,14514.95,72,Quality product 335
+336,Laptop 336,Accessories,30968.79,981,Quality product 336
+337,Screen Protector 337,Electronics,36095.81,157,Quality product 337
+338,Smartphone 338,Computers,2667.0,327,Quality product 338
+339,Monitor 339,Networking,24557.58,783,Quality product 339
+340,External HDD 340,Computers,41237.76,746,Quality product 340
+341,Webcam 341,Networking,28486.53,294,Quality product 341
+342,USB Cable 342,Networking,13980.15,637,Quality product 342
+343,Screen Protector 343,Accessories,34897.23,164,Quality product 343
+344,Camera 344,Networking,15288.53,534,Quality product 344
+345,Router 345,Storage,25901.75,998,Quality product 345
+346,Power Bank 346,Networking,1758.43,103,Quality product 346
+347,Headphones 347,Storage,4584.22,636,Quality product 347
+348,Camera 348,Accessories,3087.92,893,Quality product 348
+349,Camera 349,Storage,41115.01,483,Quality product 349
+350,Webcam 350,Electronics,35939.54,388,Quality product 350
+351,Phone Case 351,Accessories,33314.16,855,Quality product 351
+352,Monitor 352,Electronics,35461.62,840,Quality product 352
+353,Camera 353,Computers,37552.69,573,Quality product 353
+354,Laptop 354,Electronics,6313.09,68,Quality product 354
+355,Keyboard 355,Storage,44258.22,714,Quality product 355
+356,Headphones 356,Storage,13710.92,691,Quality product 356
+357,RAM 357,Networking,15353.34,490,Quality product 357
+358,Charger 358,Accessories,8030.16,151,Quality product 358
+359,Power Bank 359,Electronics,39006.03,330,Quality product 359
+360,Laptop 360,Storage,13865.71,629,Quality product 360
+361,Smartphone 361,Storage,29200.79,996,Quality product 361
+362,Laptop 362,Storage,26098.76,401,Quality product 362
+363,Smartphone 363,Networking,38386.46,966,Quality product 363
+364,Laptop 364,Storage,10526.71,731,Quality product 364
+365,RAM 365,Computers,34366.56,823,Quality product 365
+366,Router 366,Accessories,11850.72,990,Quality product 366
+367,Speaker 367,Storage,25089.37,847,Quality product 367
+368,Microphone 368,Networking,27214.42,112,Quality product 368
+369,USB Cable 369,Electronics,18287.81,241,Quality product 369
+370,Charger 370,Networking,46919.55,726,Quality product 370
+371,Router 371,Electronics,2692.66,944,Quality product 371
+372,Monitor 372,Networking,17915.96,742,Quality product 372
+373,External HDD 373,Networking,46034.54,247,Quality product 373
+374,Router 374,Storage,47030.12,119,Quality product 374
+375,RAM 375,Electronics,45014.2,625,Quality product 375
+376,Tablet 376,Accessories,28168.55,252,Quality product 376
+377,Power Bank 377,Networking,4808.94,822,Quality product 377
+378,Router 378,Accessories,48278.52,943,Quality product 378
+379,Microphone 379,Networking,47452.77,851,Quality product 379
+380,Tablet 380,Accessories,27646.36,979,Quality product 380
+381,Microphone 381,Electronics,7101.87,841,Quality product 381
+382,Smartphone 382,Accessories,32806.74,125,Quality product 382
+383,External HDD 383,Storage,13939.28,315,Quality product 383
+384,Tablet 384,Networking,5534.77,954,Quality product 384
+385,Smartphone 385,Storage,38902.52,557,Quality product 385
+386,Power Bank 386,Accessories,34996.61,899,Quality product 386
+387,USB Cable 387,Accessories,30912.29,368,Quality product 387
+388,Charger 388,Accessories,18397.08,824,Quality product 388
+389,USB Cable 389,Accessories,17322.57,969,Quality product 389
+390,Microphone 390,Computers,16641.51,33,Quality product 390
+391,Speaker 391,Electronics,2499.51,622,Quality product 391
+392,Tablet 392,Networking,25577.38,245,Quality product 392
+393,Smart Watch 393,Computers,46956.06,930,Quality product 393
+394,Phone Case 394,Electronics,28422.5,251,Quality product 394
+395,Camera 395,Electronics,4046.24,236,Quality product 395
+396,Phone Case 396,Storage,17049.14,477,Quality product 396
+397,External HDD 397,Accessories,28805.78,349,Quality product 397
+398,Laptop 398,Electronics,32654.01,420,Quality product 398
+399,Laptop 399,Electronics,36752.98,702,Quality product 399
+400,Mouse 400,Accessories,8047.65,821,Quality product 400
+401,Smartphone 401,Computers,4933.57,96,Quality product 401
+402,Charger 402,Storage,30606.88,188,Quality product 402
+403,USB Cable 403,Computers,43689.52,601,Quality product 403
+404,Laptop 404,Electronics,43915.61,594,Quality product 404
+405,Microphone 405,Computers,48149.77,525,Quality product 405
+406,Speaker 406,Electronics,47566.85,555,Quality product 406
+407,Power Bank 407,Networking,43968.1,148,Quality product 407
+408,Speaker 408,Storage,44346.7,523,Quality product 408
+409,Webcam 409,Networking,41176.14,345,Quality product 409
+410,Phone Case 410,Accessories,20070.73,80,Quality product 410
+411,Charger 411,Electronics,19437.16,916,Quality product 411
+412,Smart Watch 412,Computers,7917.78,428,Quality product 412
+413,Microphone 413,Storage,23389.21,722,Quality product 413
+414,External HDD 414,Networking,15921.77,976,Quality product 414
+415,Charger 415,Accessories,1087.76,784,Quality product 415
+416,Tablet 416,Electronics,27353.4,561,Quality product 416
+417,USB Cable 417,Accessories,49580.24,776,Quality product 417
+418,Keyboard 418,Computers,20090.05,838,Quality product 418
+419,Smartphone 419,Networking,35108.54,24,Quality product 419
+420,RAM 420,Storage,23007.74,729,Quality product 420
+421,RAM 421,Networking,28717.4,978,Quality product 421
+422,Smart Watch 422,Computers,4417.18,160,Quality product 422
+423,Keyboard 423,Electronics,47051.11,898,Quality product 423
+424,Camera 424,Networking,44247.95,879,Quality product 424
+425,Tablet 425,Computers,17688.17,500,Quality product 425
+426,Camera 426,Networking,7452.95,831,Quality product 426
+427,External HDD 427,Accessories,40421.9,814,Quality product 427
+428,Router 428,Accessories,21816.4,207,Quality product 428
+429,External HDD 429,Networking,9014.16,979,Quality product 429
+430,RAM 430,Electronics,2602.88,403,Quality product 430
+431,Screen Protector 431,Networking,38251.48,745,Quality product 431
+432,Phone Case 432,Electronics,49447.56,447,Quality product 432
+433,Microphone 433,Storage,30733.73,787,Quality product 433
+434,Microphone 434,Storage,20811.47,427,Quality product 434
+435,Smart Watch 435,Networking,44808.65,321,Quality product 435
+436,USB Cable 436,Electronics,46193.95,401,Quality product 436
+437,USB Cable 437,Electronics,28951.93,293,Quality product 437
+438,Webcam 438,Accessories,1975.58,448,Quality product 438
+439,RAM 439,Computers,31265.44,171,Quality product 439
+440,Power Bank 440,Accessories,39863.6,982,Quality product 440
+441,Power Bank 441,Storage,39177.93,616,Quality product 441
+442,Smartphone 442,Accessories,23062.66,619,Quality product 442
+443,Mouse 443,Computers,9860.29,758,Quality product 443
+444,Screen Protector 444,Electronics,36529.57,773,Quality product 444
+445,Webcam 445,Electronics,44231.47,528,Quality product 445
+446,Laptop 446,Networking,37590.02,427,Quality product 446
+447,Headphones 447,Networking,49467.04,334,Quality product 447
+448,External HDD 448,Networking,46816.85,17,Quality product 448
+449,Monitor 449,Storage,46220.5,458,Quality product 449
+450,Camera 450,Networking,30788.12,567,Quality product 450
+451,RAM 451,Computers,14725.45,57,Quality product 451
+452,Tablet 452,Electronics,33087.49,521,Quality product 452
+453,Laptop 453,Storage,28767.98,515,Quality product 453
+454,Camera 454,Accessories,35272.1,650,Quality product 454
+455,Smart Watch 455,Electronics,40340.24,340,Quality product 455
+456,Laptop 456,Storage,4661.85,831,Quality product 456
+457,Camera 457,Storage,35230.01,98,Quality product 457
+458,Smart Watch 458,Accessories,42488.24,751,Quality product 458
+459,Microphone 459,Storage,14195.2,709,Quality product 459
+460,Monitor 460,Networking,13407.44,374,Quality product 460
+461,Microphone 461,Electronics,9247.03,205,Quality product 461
+462,Laptop 462,Storage,29115.6,88,Quality product 462
+463,Router 463,Networking,31146.64,162,Quality product 463
+464,Smartphone 464,Networking,19373.65,225,Quality product 464
+465,Mouse 465,Networking,2754.4,229,Quality product 465
+466,Screen Protector 466,Accessories,7824.06,709,Quality product 466
+467,Mouse 467,Networking,32342.39,237,Quality product 467
+468,Webcam 468,Electronics,3941.93,702,Quality product 468
+469,Router 469,Computers,20350.62,630,Quality product 469
+470,Laptop 470,Accessories,30183.12,557,Quality product 470
+471,Tablet 471,Storage,1546.78,200,Quality product 471
+472,Headphones 472,Storage,29679.97,370,Quality product 472
+473,Router 473,Electronics,5626.18,993,Quality product 473
+474,Router 474,Accessories,29888.97,554,Quality product 474
+475,Charger 475,Computers,18654.45,169,Quality product 475
+476,Keyboard 476,Electronics,31556.45,980,Quality product 476
+477,Charger 477,Storage,2862.23,582,Quality product 477
+478,Smartphone 478,Accessories,33363.21,250,Quality product 478
+479,Webcam 479,Electronics,28995.04,650,Quality product 479
+480,Power Bank 480,Networking,37482.69,446,Quality product 480
+481,Mouse 481,Networking,49594.82,884,Quality product 481
+482,USB Cable 482,Networking,17302.44,426,Quality product 482
+483,Laptop 483,Networking,5978.99,263,Quality product 483
+484,Power Bank 484,Storage,34867.42,279,Quality product 484
+485,External HDD 485,Networking,10246.69,780,Quality product 485
+486,Webcam 486,Computers,19129.51,553,Quality product 486
+487,Laptop 487,Computers,4822.92,485,Quality product 487
+488,Smart Watch 488,Networking,23967.26,141,Quality product 488
+489,Speaker 489,Networking,31336.49,263,Quality product 489
+490,RAM 490,Storage,21625.12,560,Quality product 490
+491,Speaker 491,Electronics,19587.63,688,Quality product 491
+492,Webcam 492,Storage,2756.82,744,Quality product 492
+493,Laptop 493,Storage,23026.28,258,Quality product 493
+494,Keyboard 494,Computers,22230.58,379,Quality product 494
+495,Screen Protector 495,Networking,8105.55,350,Quality product 495
+496,Tablet 496,Networking,14256.64,919,Quality product 496
+497,External HDD 497,Storage,15808.2,423,Quality product 497
+498,Smart Watch 498,Storage,27666.69,561,Quality product 498
+499,External HDD 499,Storage,39539.5,684,Quality product 499
+500,Router 500,Accessories,31595.86,328,Quality product 500
