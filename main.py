@@ -1,4 +1,3 @@
-import sqlite3
 import json
 import os
 import sys
@@ -7,7 +6,7 @@ from typing import Dict, List, Tuple, Any
 from dataclasses import dataclass
 from dotenv import load_dotenv
 from anthropic import Anthropic
-from sqlalchemy import create_engine, inspect
+import database
 
 load_dotenv()
 
@@ -16,7 +15,7 @@ load_dotenv()
 class Config:
     """Configuration management"""
     api_key: str
-    db_path: str = "amazon.db"
+    database: str = "master"
     model: str = "claude-opus-4-1"
 
     @classmethod
@@ -28,73 +27,59 @@ class Config:
                 "ANTHROPIC_API_KEY not found. Please set it in .env file:\n"
                 "  ANTHROPIC_API_KEY=your-key-here"
             )
-        return cls(api_key=api_key)
+        db = os.getenv("SQL_DATABASE", "master")
+        return cls(api_key=api_key, database=db)
 
 
 class DatabaseManager:
     """Handle all database operations"""
 
-    def __init__(self, db_path: str):
-        self.db_path = db_path
-        self.engine = None
-        self.inspector = None
+    def __init__(self, db_name: str):
+        self.db_name = db_name
         self._initialize()
 
     def _initialize(self):
         """Initialize database connection"""
-        if not os.path.exists(self.db_path):
-            raise FileNotFoundError(
-                f"Database file not found: {self.db_path}\n"
-                "Please ensure amazon.db exists in the project directory."
-            )
         try:
-            self.engine = create_engine(f"sqlite:///{self.db_path}")
-            self.inspector = inspect(self.engine)
+            database.get_sql_server_connection().close()
         except Exception as e:
-            raise ConnectionError(f"Failed to connect to database: {e}")
+            raise ConnectionError(f"Failed to connect to SQL Server: {e}")
 
     def get_schema(self) -> Dict[str, List[Dict[str, str]]]:
         """Extract complete database schema"""
         schema = {}
         try:
-            for table in self.inspector.get_table_names():
-                columns = self.inspector.get_columns(table)
-                schema[table] = [
-                    {"name": col["name"], "type": str(col["type"])}
-                    for col in columns
-                ]
+            query = """
+            SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES
+            WHERE TABLE_TYPE = 'BASE TABLE'
+            """
+            result = database.execute_query(query, self.db_name)
+
+            if not result["success"]:
+                raise RuntimeError(f"Failed to get tables: {result['error']}")
+
+            tables = [row["TABLE_NAME"] for row in result["data"]]
+
+            for table in tables:
+                col_query = f"""
+                SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS
+                WHERE TABLE_NAME = '{table}'
+                """
+                col_result = database.execute_query(col_query, self.db_name)
+
+                if col_result["success"]:
+                    schema[table] = [
+                        {"name": col["COLUMN_NAME"], "type": col["DATA_TYPE"]}
+                        for col in col_result["data"]
+                    ]
+
             return schema
         except Exception as e:
             raise RuntimeError(f"Failed to extract schema: {e}")
 
     def execute_query(self, sql_query: str) -> Dict[str, Any]:
         """Execute SQL query and return results safely"""
-        if not sql_query.strip():
-            return {"success": False, "error": "Empty SQL query"}
-
-        conn = None
-        try:
-            conn = sqlite3.connect(self.db_path)
-            conn.row_factory = sqlite3.Row
-            cursor = conn.cursor()
-
-            cursor.execute(sql_query)
-            results = cursor.fetchall()
-
-            if results and cursor.description:
-                columns = [desc[0] for desc in cursor.description]
-                data = [dict(row) for row in results]
-                return {"success": True, "columns": columns, "data": data}
-            else:
-                return {"success": True, "columns": [], "data": []}
-
-        except sqlite3.Error as e:
-            return {"success": False, "error": f"SQL Error: {str(e)}"}
-        except Exception as e:
-            return {"success": False, "error": f"Unexpected error: {str(e)}"}
-        finally:
-            if conn:
-                conn.close()
+        return database.execute_query(sql_query, self.db_name)
 
 
 class SQLGenerator:
@@ -132,7 +117,7 @@ class SQLGenerator:
     @staticmethod
     def _build_prompt(user_query: str, schema_context: str) -> str:
         """Build the prompt for SQL generation"""
-        return f"""You are a SQL expert. Convert the user's natural language question into a valid SQLite SQL query.
+        return f"""You are a SQL expert. Convert the user's natural language question into a valid SQL Server T-SQL query.
 
 Database Schema:
 {schema_context}
@@ -141,11 +126,12 @@ User Question: {user_query}
 
 Rules:
 - Return ONLY the SQL query, nothing else
-- Use proper SQL syntax
+- Use proper T-SQL syntax for SQL Server
 - JOIN tables when needed
 - Use aliases for clarity
-- Ensure the query is valid SQLite syntax
+- Ensure the query is valid SQL Server syntax
 - Handle NULL values appropriately
+- Use CAST() or CONVERT() for type conversions if needed
 
 SQL Query:"""
 
@@ -156,7 +142,7 @@ class DataAnalyzer:
     def __init__(self, config: Config):
         self.config = config
         self.client = Anthropic(api_key=config.api_key)
-        self.db = DatabaseManager(config.db_path)
+        self.db = DatabaseManager(config.database)
         self.schema = self.db.get_schema()
         self.sql_gen = SQLGenerator(self.client, config.model, self.schema)
 
@@ -229,6 +215,35 @@ class DataAnalyzer:
         print(f"Total: {len(result['data'])} rows\n")
 
 
+def select_database() -> str:
+    """List available databases and let user select one"""
+    print("[INIT] Fetching available databases...")
+    try:
+        databases = database.list_databases()
+        user_databases = [db for db in databases if db not in ["master", "tempdb", "model", "msdb"]]
+
+        if not user_databases:
+            print("[WARNING] No user databases found. Using 'master'")
+            return "master"
+
+        print(f"\n[INIT] Available databases:")
+        for i, db in enumerate(user_databases, 1):
+            print(f"  {i}. {db}")
+
+        while True:
+            try:
+                choice = input(f"\nSelect database (1-{len(user_databases)}): ").strip()
+                idx = int(choice) - 1
+                if 0 <= idx < len(user_databases):
+                    return user_databases[idx]
+                print(f"Please enter a number between 1 and {len(user_databases)}")
+            except ValueError:
+                print("Invalid input. Please enter a number.")
+    except Exception as e:
+        print(f"[WARNING] Could not fetch databases: {e}. Using 'master'")
+        return "master"
+
+
 def main():
     """Main entry point"""
     print("\n" + "="*60)
@@ -241,7 +256,11 @@ def main():
         config = Config.from_env()
         print("[INIT] Configuration loaded\n")
 
-        print("[INIT] Initializing database...")
+        # Let user select database
+        selected_db = select_database()
+        config.database = selected_db
+
+        print(f"\n[INIT] Initializing database: {selected_db}...")
         analyzer = DataAnalyzer(config)
         print(f"[INIT] Database connected")
         print(f"[INIT] Tables found: {', '.join(analyzer.schema.keys())}\n")
@@ -251,41 +270,54 @@ def main():
         sql, results = analyzer.analyze(test_query)
         analyzer.display_results(sql, results)
 
-        # Interactive mode
-        print("\n" + "="*60)
-        print("Tips:")
-        print("  - Ask questions in natural language")
-        print("  - Type 'exit' or 'quit' to stop")
-        print("="*60 + "\n")
+        # Interactive mode (skip in Docker)
+        if os.getenv("DOCKER_ENV") != "true":
+            print("\n" + "="*60)
+            print("Tips:")
+            print("  - Ask questions in natural language")
+            print("  - Type 'db' to switch databases")
+            print("  - Type 'exit' or 'quit' to stop")
+            print("="*60 + "\n")
 
-        while True:
-            try:
-                user_input = input("Enter your question: ").strip()
+            while True:
+                try:
+                    user_input = input("Enter your question: ").strip()
 
-                if user_input.lower() in ["exit", "quit", "q"]:
-                    print("\nGoodbye!\n")
+                    if user_input.lower() in ["exit", "quit", "q"]:
+                        print("\nGoodbye!\n")
+                        break
+
+                    if user_input.lower() == "db":
+                        new_db = select_database()
+                        if new_db != analyzer.db.db_name:
+                            config.database = new_db
+                            analyzer = DataAnalyzer(config)
+                            print(f"\n[SUCCESS] Switched to database: {new_db}")
+                            print(f"[INFO] Tables found: {', '.join(analyzer.schema.keys())}\n")
+                        continue
+
+                    if not user_input:
+                        continue
+
+                    sql, results = analyzer.analyze(user_input)
+                    analyzer.display_results(sql, results)
+
+                except KeyboardInterrupt:
+                    print("\n\nInterrupted. Goodbye!\n")
                     break
-
-                if not user_input:
-                    continue
-
-                sql, results = analyzer.analyze(user_input)
-                analyzer.display_results(sql, results)
-
-            except KeyboardInterrupt:
-                print("\n\nInterrupted. Goodbye!\n")
-                break
-            except Exception as e:
-                print(f"\n[ERROR] {e}\n")
+                except Exception as e:
+                    print(f"\n[ERROR] {e}\n")
+        else:
+            print("\n[INFO] Running in Docker mode. Test query completed.\n")
 
     except ValueError as e:
         print(f"\n[ERROR] Configuration Error:\n  {e}\n")
         sys.exit(1)
-    except FileNotFoundError as e:
-        print(f"\n[ERROR] File Error:\n  {e}\n")
-        sys.exit(1)
     except ConnectionError as e:
         print(f"\n[ERROR] Connection Error:\n  {e}\n")
+        sys.exit(1)
+    except RuntimeError as e:
+        print(f"\n[ERROR] Database Error:\n  {e}\n")
         sys.exit(1)
     except Exception as e:
         print(f"\n[ERROR] Unexpected Error:\n  {e}\n")
