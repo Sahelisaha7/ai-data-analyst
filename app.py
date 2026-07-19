@@ -113,7 +113,7 @@ def index():
     <!DOCTYPE html>
     <html>
     <head>
-        <title>AI Data Analyst</title>
+        <title>NL-to-SQL Engine</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -206,7 +206,7 @@ def index():
     </head>
     <body>
         <div class="container">
-            <h1>🤖 AI Data Analyst</h1>
+            <h1>🤖 NL-to-SQL Engine</h1>
 
             <div class="section">
                 <h2>Step 1: Select Database</h2>

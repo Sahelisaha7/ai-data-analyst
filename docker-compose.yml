@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  ai-analyst:
+  nl-to-sql:
     build: .
-    container_name: ai-data-analyst
+    container_name: nl-to-sql-engine
     environment:
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
       - SQL_DATABASE=master

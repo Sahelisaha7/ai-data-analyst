@@ -1,4 +1,4 @@
-# AI Data Analyst
+# NL-to-SQL Engine
 
 Convert natural language questions into SQL queries using Claude AI. Query your SQL Server database through a beautiful web interface.
 
@@ -13,8 +13,8 @@ Convert natural language questions into SQL queries using Claude AI. Query your 
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/YOUR-USERNAME/AI-data-analyst.git
-cd AI-data-analyst
+git clone https://github.com/YOUR-USERNAME/nl-to-sql-engine.git
+cd nl-to-sql-engine
 ```
 
 ### 2. Create Virtual Environment
